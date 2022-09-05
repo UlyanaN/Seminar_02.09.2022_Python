@@ -10,13 +10,13 @@ x = int(input('Введите координаты точки, x: '))
 y = int(input('y: '))
 
 def Quarte(xc, yc):
-    if (xc > 0 and yc > 0):
+    if xc > 0 and yc > 0:
         return "Первая четверть"
-    elif (xc < 0 and yc > 0):
+    elif xc < 0 and yc > 0:
         return "Вторая четверть"
-    elif (xc < 0 and yc < 0):
+    elif xc < 0 and yc < 0:
         return "Третья четверть"
-    elif (xc > 0 and yc < 0):
+    elif xc > 0 and yc < 0:
         return "Четвертая четверть"
     else:
         return "Введены некорректные коорднаты"
