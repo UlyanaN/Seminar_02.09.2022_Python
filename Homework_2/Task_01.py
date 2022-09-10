@@ -8,7 +8,9 @@ real_number = input('Введите вещественное число: ')
 
 def sum_of_digits (num):
     x = num.split(".") 
-    a = int(x[0]) 
+    a = int(x[0])
+    if a < 0:
+        a*=-1
     b = int(x[1]) 
     sum = 0
     while (a != 0): 
