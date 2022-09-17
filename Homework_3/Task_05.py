@@ -3,10 +3,15 @@
 # - для k = 8 список будет выглядеть так: 
 # [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21] [Негафибоначчи]
 
+
 number = int(input('Введите число: '))
 
 def fibonacci(n):
-    if n in (1, 2):
+    if n < -2:
+        return ((fibonacci(n + 2)) - fibonacci(n + 1))
+    elif n == -2:
+        return -1
+    elif n in (-1, 1, 2):
         return 1
     elif n == 0:
         return 0
@@ -16,9 +21,9 @@ def fibonacci(n):
 
 
 list_fib = []
-for i in range (1, number+1):
+for i in range ((-number), number+1):
+    # print (i)
     list_fib.append(fibonacci(i))
 
 print('Последовательность Фибоначчи: ')
 print(list_fib)
-
