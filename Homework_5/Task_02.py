@@ -16,9 +16,8 @@ print('На столе лежит 2021 конфета')
 def input_dat(name):
     x = int(input(f"Сколько конфет возьмет игрок {name} (от 1 до 28): "))
     while x < 1 or x > 28:
-        x = int(input(f"неверное количество конфет: "))
+        x = int(input(f"Неверно введено количество конфет "))
     return x
-
 
 def p_print(name, k, counter, value):
     print(f"Игрок {name} взял {k}, теперь у него {counter}, на столе осталось {value} конфет.")
@@ -35,7 +34,7 @@ else:
 counter1 = 0 
 counter2 = 0
 
-while value > 28:
+while value != 0:
     if flag:
         k = input_dat(player1)
         counter1 += k
