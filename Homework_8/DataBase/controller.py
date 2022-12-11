@@ -7,7 +7,6 @@ import add_new_data as ad
 import find_data as fd
 import show_data as sd
 import change_phone as cp
-import delete_data as dd
 
 
 def user_choice():
@@ -22,8 +21,6 @@ def user_choice():
         sd.all_db()
     elif choice_num == '5':
         cp.change_phone_number()
-    elif choice_num == '6':
-        dd.delete_person()
     elif choice_num == 'x':
         print('\nБлагодарим за визит!\n\nДо новых встреч!')
         exit()
